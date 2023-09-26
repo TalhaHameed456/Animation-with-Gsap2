@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gilroy';
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    padding: 0 34px;
+    z-index: 99;
+}
+#nav>h1{
+    font-size: 2.3rem;
+    font-weight: 200;
+    
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    
+} 
+#nav-part2 a{
+    margin: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+}
+#nav-part2 a:nth-last-child(1){
+    
+    padding: 7px 17px;
+    border-radius: 50px;
+    border: 1px solid #000;
+    position: relative;
+    overflow: hidden;
+}
+#nav-part2 a:nth-last-child(1) #green{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    transition: left 0.5s ease;
+
+}
+#nav-part2 a:nth-last-child(1) h5{
+    font-weight: 300;
+    position: relative;
+    z-index: 99;
+}
+#nav-part2 a:nth-last-child(1):hover #green{
+    left:0;
+}
+#main>h1{
+    /* background-color: brown; */
+    font-size: 5.5vw;
+    text-align: center;
+    width: 60%;
+    font-weight: 100;
+    position: relative;
+    z-index: 99;
+
+}
+#main>#img1{
+   height: 480px;
+   width: 270px;
+   position: absolute;
+   top:20%;
+   left: 7%;
+}
+#main>#img2{
+    height: 250px;
+    width: 300px;
+    position: absolute;
+    top:19%;
+    right: 27%;
+ }
+ #main>#img3{
+    height: 270px;
+    position: absolute;
+    right: 8%;
+    bottom: 6%;
+ } 
+
+#main img{
+    transition: margin 0.6s ease;
+}
+#main img:hover{
+    margin-top: -10px;
+}
+#page2{
+    width: 100%;
+    height: 70vh;
+    background-color: #000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+}
+#page2>h4{
+    font-size: 20px;
+    font-family: 'gilroy';
+    font-weight: 500;
+    position: relative;
+}
+#page2>h4::selection{
+    color: springgreen;
+    background-color: #fff;
+}
+#page2>h4::before{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: springgreen;
+    border-radius: 50%;
+    top:20%;
+    left: -5%;
+}
+#page2>h1{
+    width: 70%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    margin: 30px 0;
+    position: relative;
+}
+#page2>h1::selection{
+    color: springgreen;
+    background-color: #fff;
+}
+#page2>h1::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 24%;
+    width: 198px;
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+    height: 64px;
+    /* background-color: brown; */
+}
+#about-us{
+    /* background-color: brown; */
+    width: 200px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    
+
+}
+#about-us h5{
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'Gilroy';
+}
+#about-us h5::selection{
+    color: springgreen;
+    background-color: #fff;
+}
+#green2{
+    width: 65px;
+    height: 33px;    
+    /* background-color: springgreen;     */
+    border-radius: 50px;
+    margin-left: 15px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#about-us img{
+    height: 35px;
+    margin-left: 12px;
+}
+#hovering{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    transition: left 0.5s ease;
+}
+#green2:hover #hovering{
+    left:0;
+}
+#green2 img{
+    font-weight: 300;
+    position: relative;
+    z-index: 99;
+}
+
